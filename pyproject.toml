@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "visualx"
+version = "0.1.0"
+description = "VisualX is a lightweight library for adding intro/splash logo screens to applications."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Yurii Shestopalov", email = "yurii.shestopalov@gmail.com" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest", "mypy"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/visualx"]
